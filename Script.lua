@@ -49,7 +49,7 @@ Tab:AddToggle({
     Callback = function(Value)
         runningPlayerValue = Value
         while runningPlayerValue do
-            game:GetService('ReplicatedStorage'):FindFirstChild('PlayerValue'):FireServer(999999999)
+            game:GetService('ReplicatedStorage'):FindFirstChild('PlayerValue'):FireServer(9999999999)
             wait(0.01)  
         end
     end
