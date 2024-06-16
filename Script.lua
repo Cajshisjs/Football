@@ -23,7 +23,7 @@ Tab:AddToggle({
                 [2] = game:GetService("ReplicatedStorage"):WaitForChild("Prime"):WaitForChild("Prime Ronaldo")
             }
             game:GetService("ReplicatedStorage"):WaitForChild("NewCardAdding"):FireServer(unpack(args))
-            wait(0.01)
+            wait(0.01)  -- Extremely fast wait time
         end
     end
 })
@@ -38,7 +38,7 @@ Tab:AddToggle({
                 [1] = 9999999999
             }
             game:GetService("ReplicatedStorage"):WaitForChild("ClaimReward"):FireServer(unpack(args))
-            wait(0.01)
+            wait(0.01)  -- Extremely fast wait time
         end
     end
 })
@@ -50,18 +50,9 @@ Tab:AddToggle({
         runningPlayerValue = Value
         while runningPlayerValue do
             game:GetService('ReplicatedStorage'):FindFirstChild('PlayerValue'):FireServer(999999999)
-            wait(0.01)
+            wait(0.01)  -- Extremely fast wait time
         end
     end
 })
-
--- Credits Tab
-local CreditsTab = Window:MakeTab({
-    Name = "Credits",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-CreditsTab:AddLabel("Credits to Newplayer900")
 
 OrionLib:Init()
